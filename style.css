@@ -1,6 +1,9 @@
 body {
 background-color: black;
 }
+p {
+    color: white;
+}
 section {
     padding-top: 128px;
     position: relative;
@@ -127,9 +130,22 @@ section::before {
 #work-3:hover::after{
     content:'Web Project'
 }
-
-
-
+.contact {
+    padding-bottom: 128px;
+}
+form {
+    color: white;
+}
+.contact::before {
+    content:"Contact"
+}
+.contact-form {
+    border : 1px solid white;
+    padding: 64px 32px;
+}
+.form-label {
+    font-weight: 700;
+}
 @keyframes upDown{
     0% {
         transform: translateY();
