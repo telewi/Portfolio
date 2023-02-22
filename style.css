@@ -3,13 +3,25 @@ background-color: black;
 }
 section {
     padding-top: 128px;
+    position: relative;
+}
+section::before {
+    z-index: -1;
+    content: "";
+    font-size: 72px;
+    color: orange;
+    opacity: 0.5;
+    position: absolute;
+    font-weight: 700;
+    top: 20px;
+    left: -30px
 }
 .btn.button {
     border: 3px solid white;
     border-radius: 24px;
     color: white;
 }
-.btn.button:hover {
+.btn.button:hover, .btn.button.active {
     border:3px solid white;
     background-color: white;
     color: orange;
@@ -38,6 +50,25 @@ section {
 }
 #arrow {
     animation: 1s upDown infinite;
+}
+.about {
+    color:white
+}
+.about::before {
+    content: 'About';
+    
+
+}
+.about-exp-item{
+    margin-top: 24px;
+}
+.about-exp-item-header{
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;
+}
+.about-exp-item-detail{
+    display: none;
 }
 @keyframes upDown{
     0% {
