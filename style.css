@@ -46,11 +46,15 @@ section::before {
     color: white;
  }
  
- .colorarrow{
+ .home .arrow img{
     color: white;
     width: 60px;
     height: 60px;
+}.home img {
+    width: 100%;
+
 }
+
 #arrow {
     animation: 1s upDown infinite;
 }
@@ -145,6 +149,17 @@ form {
 }
 .form-label {
     font-weight: 700;
+}
+@media only screen and (max-width:768px) {
+    .home img{
+        width: 50%;
+    }
+}
+@media only screen and (max-width:576px) {
+    section:before{
+        left: -10px;
+        font-size: 64px;
+    }
 }
 @keyframes upDown{
     0% {
